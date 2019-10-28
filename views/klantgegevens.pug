@@ -1,0 +1,29 @@
+doctype html
+
+html(lang='en')
+  body
+    table.table.table-striped
+      tr
+        th firstletters
+        th lastname
+        th street
+        th housenumber
+        th city
+        th postalcode
+        th bsn
+        th dateofbirth
+        th phonenr
+        th email
+
+      each n in data
+        tr
+          td= n.firstletters
+          td= n.lastname
+          td= n.street
+          td= n.housenumber
+          td= n.city
+          td= n.postalcode
+          td= n.bsn
+          td= n.dateofbirth
+          td= n.phonenr
+          td= n.email
