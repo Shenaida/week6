@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Client</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		nav{
+			list-style-type: none;
+			margin:0;
+			padding-top: 10px;
+			overflow: hidden;
+			background-color: #333;
+		}
+		.nav-item{
+			float:left;
+			display: block;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			margin-bottom: 5px;
+			margin-left: 5 px;
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		.nav-item-right{
+			float:right;
+			display: block;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			margin-left: 5 px;
+			margin-right: 5px;
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		img {
+				filter: invert(100%);
+			}
+		#box {
+			background-color: grey;
+			color: white;
+			padding: 5px 5px 5px 5px;
+			border-radius:5px;
+		}
+		thead{
+			background-color: rgb(227, 227, 227);
+		}
+		table{
+			margin:4px;
+		}
+		#submit{
+			position:relative;
+			left:15px;
+			}
+
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+			<ul>
+				<li class="nav-item">
+					<a style= "font-size:25px; color: white">Quintor</a>
+				</li>
+				<li class="nav-item">
+					<span><img alt="home icon" src="https://img.icons8.com/metro/26/000000/home.png" hspace="10">home</span>
+				</li>
+				<li class="nav-item">
+					<span><img alt="user icon" src="https://img.icons8.com/metro/26/000000/gender-neutral-user.png" hspace="10">klantgegevens</span>
+				</li>
+				<li class="nav-item">
+					<span><img alt="bill icon" src="https://img.icons8.com/metro/26/000000/bill.png" hspace="10">rekening overzicht</span>
+				</li>
+				<li class="nav-item">
+					<span><img alt="money icon" src="https://img.icons8.com/metro/26/000000/money.png" hspace="10">overboeking</span>
+				</li>
+				<li class="nav-item-right">
+					<div id="box">log gebruiker1 (123456) uit</div>
+				</li>
+			</ul>
+        </nav>
+    </header>
+	<div class="container">           
+	<table class="table table-bordered">
+		<thead>
+		  <tr>
+			<th>Gegevens voor K Test1</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>
+				<h3>Klantgegevens</h3>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="firstletters" class="col-2 control-label">Voorletters</label>
+					<div class="col-5">
+						<input type="text" class="form-control" id="firstletters" placeholder="K" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="lastname" class="col-2 control-label">Achternaam</label>
+					<div class="col-7">
+						<input type="text" class="form-control" id="lastname" placeholder="Test1" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="street" class="col-2 control-label">Straat</label>
+					<div class="col-7">
+						<input type="text" class="form-control" id="street" placeholder="Straatnaam" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="housenumber" class="col-2 control-label">Huisnummer</label>
+					<div class="col-5">
+						<input type="number" class="form-control" id="housenumber" placeholder="10" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="city" class="col-2 control-label">Plaats</label>
+					<div class="col-7">
+						<input type="text" class="form-control" id="city" placeholder="Groningen" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="postalcode" class="col-2 control-label">Postcode</label>
+					<div class="col-5">
+						<input type="text" class="form-control" id="postalcode" placeholder="9718AT" required pattern="^\d{4}\s?\w{2}$">
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="bsn" class="col-2 control-label">BSN</label>
+					<div class="col-7">
+						<input type="number" class="form-control" id="bsn" placeholder="111111110" required minlength="9" maxlength="9">
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="dateofbirth" class="col-2 control-label">Geboorte datum</label>
+					<div class="col-7">
+						<input type="date" class="form-control" id="dateofbirth" placeholder="" required>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="phonenr" class="col-2 control-label">Tel.nr</label>
+					<div class="col-5">
+						<input type="number" class="form-control" id="phonenr" placeholder="0612345678" required minlength="10" maxlength="11">
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="email" class="col-2 control-label">Email</label>
+					<div class="col-7">
+						<input type="email" class="form-control" id="email" placeholder="klant1@quintor.nl" required>
+					</div>
+				</div>
+				<div>
+					<input id="submit" type="submit" value="Opslaan" class="btn btn-primary col-1">
+				</div>
+			</td>
+		  </tr>
+		</tbody>
+  </table>
+</div>
+</form>
+</body>
+</html>
